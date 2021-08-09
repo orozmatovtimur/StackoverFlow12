@@ -41,7 +41,7 @@ class CustomUser(AbstractUser):
 	REQUIRED_FIELDS = []
 
 	def create_activation_code(self):
-		code = get_random_string(25, allowed_chars='abcdefghijklmnopqrstuvwxyz0123456789#$%&')
+		code = get_random_string(25, allowed_chars='abcdefghijklmnopqrstuvwxyz1234567890')
 		self.activation_code = code
 
 	def __str__(self):

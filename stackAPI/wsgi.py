@@ -1,5 +1,5 @@
 """
-WSGI config for stack_api project.
+WSGI config for stackAPI project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'stack_api.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'stackAPI.settings')
 
 application = get_wsgi_application()
