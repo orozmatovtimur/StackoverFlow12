@@ -5,7 +5,7 @@ from account.models import CustomUser
 
 class Problem(models.Model):
 	title = models.CharField(max_length=255)
-	description = models.TextField
+	description = models.TextField()
 	author = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='problems')
 	created = models.DateTimeField(auto_now_add=True)
 
