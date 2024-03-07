@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "master" ]
   pull_request:
-    branches: [ ${{ github.event_name == 'push' && 'master' || github.head_ref }} ]
+    branches: [ "master" ]
 
 jobs:
   build:
